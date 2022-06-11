@@ -1,8 +1,5 @@
 # Kate Template Documentation
 
-## Inroduction
-Thanks for purchase this HTML template. Please don't forget to rate it on ThemeForest.
-
 ## Getting started
 This guid target at people who have at least basic knowledge of html markup language. Furthermore css and javascript knowledge is advised. If you do not feel yourself well with understanding these technologies you should consider finding someone to assist you.
 
