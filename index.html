@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <title>KATE - vCard Responsive Template</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+  
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- GOOGLE FONTS -->
+  <link href='https://fonts.googleapis.com/css?family=Yantramanav:400,500,700,900,300,100' rel='stylesheet' type='text/css'>
+
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+
+  <!-- JAVASCRIPT -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maps.google.com/maps/api/js"></script>
+  <script src="js/main.min.js"></script>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+
+  <!-- SITE LOADER -->
+  <div class="loader-wrap fixed cover none text-contrast bg-primary text-center z-index-last vertical-align">
+    <div class="loader mx-auto vertical-align-middle">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+  
+
+  <!-- POPUP DIALOG #01 -->
+  <div id="mfp-dialog-01" class="mfp-dialog mfp-hide">
+    <img src="img/demo/portfolio-single_01.jpg" alt="Project Title">
+    <div class="p3">
+      <h1 class="h2 mt0">Project Title</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut itaque sequi aut, adipisci, molestias tempore et vitae quia praesentium recusandae porro doloremque enim, perferendis quis unde commodi vel delectus quas.</p>
+      <p>Distinctio numquam, aut minima libero. Dolore architecto sequi pariatur cumque nostrum incidunt ex ab dolores aliquam quaerat. Distinctio molestias architecto deleniti quas delectus ullam nulla tempora, eveniet quod cumque, nemo!</p>
+      <p>Aspernatur delectus ducimus nesciunt harum, illo vero velit laboriosam vel, officia debitis, neque! Saepe est non ut aperiam, ex ducimus! Facere expedita illum commodi itaque sunt ab labore reiciendis sequi.</p>
+    </div>
+  </div>
+
+
+  <!-- POPUP DIALOG #02 -->
+  <div id="mfp-dialog-02" class="mfp-dialog mfp-hide">
+    <img src="img/demo/portfolio-single_02.jpg" alt="Another Project Title">
+    <div class="p3">
+      <h1 class="h2 mt0">Another Project Title</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, molestias est laudantium! Reprehenderit dolorem unde temporibus nemo, eligendi sed eaque cumque perspiciatis enim id sint aliquam minima, totam excepturi iusto!</p>
+      <p>Reiciendis cupiditate itaque obcaecati similique fuga corporis odit eum doloremque saepe. Voluptas optio cupiditate, pariatur nostrum facere quidem. Consequatur animi atque esse eveniet id doloribus totam omnis quaerat tenetur. Accusamus?</p>
+      <p>Delectus animi odio possimus, sit, omnis nobis minus suscipit! Animi voluptate ratione, est perferendis quisquam aliquam incidunt aut officiis natus minima ut fuga nostrum, pariatur omnis perspiciatis qui quaerat, quibusdam?</p>
+      <h2 class="h3">Sub Project Title</h2>
+      <p>Doloremque animi labore similique itaque deleniti iusto magnam repudiandae, consectetur, accusantium illum vel facilis qui atque aliquid est eius amet dolore, molestias non! Reprehenderit excepturi, voluptas placeat rerum possimus beatae!</p>
+      <p>Quis ullam veritatis perspiciatis quibusdam! Veritatis, qui nemo provident maxime autem praesentium, voluptatibus quo unde cupiditate dolore amet voluptate eligendi tempore molestias optio alias soluta quidem animi dolor error possimus.</p>
+    </div>
+    <img src="img/demo/portfolio-single_03.jpg" alt="Sub Project Title">
+    <div class="p3">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex dolor temporibus sint ipsam reprehenderit officia ratione excepturi pariatur, quis explicabo veritatis illo facilis eaque eos amet officiis, itaque libero quam.</p>
+      <p>Rem animi itaque, adipisci laudantium odit officiis. Nobis eligendi vel reiciendis temporibus officiis et quidem eaque aperiam quam sint quia enim explicabo officia, minus iure molestias perspiciatis aspernatur ipsa ducimus!</p>
+      <p>Non hic consectetur maxime asperiores! Possimus repudiandae cumque iure laboriosam repellat nobis perspiciatis minima nostrum quis numquam eius, aut quisquam et maxime quae nihil praesentium odit atque delectus voluptatem. Quidem.</p>
+    </div>
+  </div>
+
+
+  <!-- MAIN MENU -->
+  <div class="absolute col-12 py2 text-contrast">
+    <div class="container mx-auto px3">
+      <div class="lg-flex items-center justify-between text-center">
+
+        <!-- LOGO -->
+        <div data-animate='{"cls": "animated zoomIn"}'>
+          <img src="img/logo.svg" alt="Kate Morgan">
+        </div>
+
+        <!-- ITEMS -->
+        <div class="py3 text-sm uppercase" data-animate='{"cls": "animated fadeIn", "target": "a", "delay": "150"}'>
+          <div class="inline-block p1"><a href="#hero">Home</a></div>
+          <div class="inline-block p1"><a href="#about">About me</a></div>
+          <div class="inline-block p1"><a href="#customers">Customers</a></div>
+          <div class="inline-block p1"><a href="#portfolio">Portfolio</a></div>
+          <div class="inline-block p1"><a href="#reviews">Reviews</a></div>
+          <div class="inline-block p1"><a href="#get-in-touch">Contact</a></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- #01 SECTION: HERO -->
+  <div id="hero" class="text-contrast" data-parallax="scroll" data-image-src="img/blue-parallax_01.jpg">
+    <div class="container mx-auto px3 vertical-align height-viewport">
+
+      <!-- MIDDLE ALIGN -->
+      <div class="col-12 text-center vertical-align-middle" data-animate='{"cls": "animated fadeInUp", "target": "> * > *", "delay": "200"}'>
+
+        <!-- MY NAME -->
+        <div class="text-xl my4">
+          <h1 class="h6 my0">Hello, my name is</h1>
+          <h2 class="h1 my0 height-natural"><span data-type="Kate^1000 Morgan"></span></h2>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="my4">
+          <div class="inline-block m1"><a href="#about" class="btn btn-contrast rounded-large">About me</a></div>
+          <div class="inline-block sm-hidden m1 text-muted">or</div>
+          <div class="inline-block m1"><a href="#get-in-touch">Hire me</a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- #02 SECTION: ABOUT ME -->
+  <div id="about" class="bg-contrast py4">
+    <div class="container mx-auto px3">
+
+      <!-- SECTION'S HEADING -->
+      <div class="mb3 text-center" data-animate='{"cls": "animated fadeInDown", "target": "> *", "delay": "200"}'>
+        <h1 class="my0">About me</h1>
+        <h2 class="h5 my1 text-muted">My Personal Information</h2>
+        <span class="divider col-1 mx-auto mt2"></span>
+      </div>
+
+      <!-- AVATAR -->
+      <div class="mb4 text-center" data-animate='{"cls": "animated zoomIn", "target": "> *", "delay": "200"}'>
+        <img class="mb1 circle" src="img/demo/user.jpg" alt="Kate Morgan">
+        <h3 class="text-center mt2 mb0">Kate Morgan</h3>
+      </div>
+
+
+      <!-- DESCRIPTION & SKILLS -->
+      <div class="clearfix mb4 lg-mxn3">
+
+        <!-- DESCRIPTION -->
+        <div class="col sm-col-12 lg-col-6 pb4 lg-pb0 lg-px3" data-animate='{"cls": "animated fadeInUp", "target": "> div", "delay": "200"}'>
+
+          <!-- #1 -->
+          <div class="text-left my3">
+            <h4>Lorem ipsum dolor</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam doloribus, laborum, et repellendus <a href="#">unde doloremque</a> assumenda tempore architecto iusto corporis odio nemo quam modi ullam, expedita ad soluta sequi iste!</p>
+          </div>
+
+          <!-- #2 -->
+          <div class="text-left my3">
+            <h4>Velit dolores illo</h4>
+            <p>Assumenda voluptatibus est ipsum cumque harum <i>necessitatibus</i> optio eius recusandae expedita, culpa quibusdam aut odit iste possimus molestias architecto perferendis <b>aperiam</b> ut alias?</p>
+          </div>
+
+        </div>
+
+        <!-- SKILLS -->
+        <div class="col col-12 lg-col-6 pb4 lg-pb0 lg-px3" data-animate='{"cls": "animated fadeIn"}'>
+
+          <!-- #1 -->
+          <div class="mb2">
+            <h5 class="mb1">Branding</h5>
+            <div class="progress rounded" data-progress-width="30%">
+              <div class="progress-bar rounded"></div>
+            </div>
+          </div>
+
+          <!-- #2 -->
+          <div class="mb2">
+            <h5 class="mb1">Development</h5>
+            <div class="progress rounded" data-progress-width="50%">
+              <div class="progress-bar rounded"></div>
+            </div>
+          </div>
+
+          <!-- #3 -->
+          <div class="mb2">
+            <h5 class="mb1">Designing</h5>
+            <div class="progress rounded" data-progress-width="70%">
+              <div class="progress-bar rounded"></div>
+            </div>
+          </div>
+
+          <!-- #4 -->
+          <div class="mb2">
+            <h5 class="mb1">Illustration</h5>
+            <div class="progress rounded" data-progress-width="100%">
+              <div class="progress-bar rounded"></div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <!-- ICON SET -->
+      <div class="clearfix mnx3" data-animate='{"cls": "animated zoomIn", "target": "> div", "delay": "200"}'>
+
+        <!-- #1 -->
+        <div class="col col-12 md-col-4 px3 py2">
+          <div class="text-center">
+            <i class="icon-earth text-xl text-muted"></i>
+            <h4 class="text-center">Harum quasi deserunt?</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci illo inventore labore nulla velit facere.</p>
+          </div>
+        </div>
+
+        <!-- #2 -->
+        <div class="col col-12 md-col-4 px3 py2">
+          <div class="text-center">
+            <i class="icon-android-happy text-xl text-muted"></i>
+            <h4 class="text-center">Aspernatur error</h4>
+            <p>Facere ab voluptatibus eveniet aliquid reprehenderit obcaecati excepturi unde, non cumque minima nam.</p>
+          </div>
+        </div>
+
+        <!-- #3 -->
+        <div class="col col-12 md-col-4 px3 py2">
+          <div class="text-center">
+            <i class="icon-image text-xl text-muted"></i>
+            <h4 class="text-center">Voluptatibus laborum</h4>
+            <p>Impedit officiis illo illum fuga, tenetur voluptatem reprehenderit minus itaque quisquam voluptates error cum!</p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
+
+
+  <!-- #03 SECTION: CUSTOMERS -->
+  <div id="customers" class="bg-default py4">
+    <div class="container mx-auto px3">
+
+      <!-- SECTION'S HEADING -->
+      <div class="mb3 text-center" data-animate='{"cls": "animated fadeInDown", "target": "> *", "delay": "200"}'>
+        <h1 class="my0">My Favorite Customers</h1>
+        <span class="divider col-1 mx-auto mt2"></span>
+      </div>
+
+      <!-- #01 CAROUSEL -->
+      <div class="owl-carousel-wrap" data-animate='{"cls": "animated fadeIn", "target": ".owl-item", "delay": "200"}'>
+
+        <!-- ITEMS -->
+        <div id="carousel-01" class="owl-carousel" data-animate='{"cls": "animated fadeInUp", "target": ".owl-dot", "delay": "100"}'>
+
+          <!-- #01 -->
+          <div class="px1">
+            <a href="#" class=" text-decoration-none"><img src="img/demo/customer-01.png" alt="Customer"></a>
+          </div>
+
+          <!-- #02 -->
+          <div class="px1">
+            <a href="#" class=" text-decoration-none"><img src="img/demo/customer-02.png" alt="Customer"></a>
+          </div>
+
+          <!-- #03 -->
+          <div class="px1">
+            <a href="#" class=" text-decoration-none"><img src="img/demo/customer-03.png" alt="Customer"></a>
+          </div>
+
+          <!-- #04 -->
+          <div class="px1">
+            <a href="#" class=" text-decoration-none"><img src="img/demo/customer-04.png" alt="Customer"></a>
+          </div>
+
+          <!-- #05 -->
+          <div class="px1">
+            <a href="#" class=" text-decoration-none"><img src="img/demo/customer-01.png" alt="Customer"></a>
+          </div>
+
+          <!-- #06 -->
+          <div class="px1">
+            <a href="#" class=" text-decoration-none"><img src="img/demo/customer-02.png" alt="Customer"></a>
+          </div>
+
+          <!-- #07 -->
+          <div class="px1">
+            <a href="#" class=" text-decoration-none"><img src="img/demo/customer-03.png" alt="Customer"></a>
+          </div>
+
+          <!-- #08 -->
+          <div class="px1">
+            <a href="#" class=" text-decoration-none"><img src="img/demo/customer-04.png" alt="Customer"></a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- 04 SECTION: PORTFOLIO -->
+  <div id="portfolio" class="bg-contrast py4">
+    <div class="container mx-auto">
+
+      <!-- SECTION'S HEADING -->
+      <div class="mb3 text-center" data-animate='{"cls": "animated fadeInDown", "target": "> *", "delay": "200"}'>
+        <h1 class="my0">My awesome portfolio</h1>
+        <h2 class="h5 text-muted mt1">Check my creativity</h2>
+        <span class="divider col-1 mx-auto mt2"></span>
+      </div>
+
+    </div>
+
+    <!-- SHUFFLE FILTER -->
+    <nav class="shuffle-filter text-center mb3" data-shuffle="shuffle-portfolio" data-animate='{"cls": "animated fadeIn", "target": "> div", "delay": "75"}'>
+
+      <!-- #01 -->
+      <div class="inline-block p1"><a href="#" class="btn btn-small rounded is-active" data-group="all">All</a></div>
+
+      <!-- #02 -->
+      <div class="inline-block p1"><a href="#" class="btn btn-small rounded" data-group="templates">templates</a></div>
+
+      <!-- #03 -->
+      <div class="inline-block p1"><a href="#" class="btn btn-small rounded" data-group="illustrations">Illustrations</a></div>
+
+      <!-- #04 -->
+      <div class="inline-block p1"><a href="#" class="btn btn-small rounded" data-group="logotypes">Logotypes</a></div>
+    </nav>
+
+
+    <!-- SHUFFLE -->
+    <div id="shuffle-portfolio" class="shuffle-grid" data-animate='{"cls": "animated zoomIn", "target": ".overlay", "delay": "150"}'>
+
+      <!-- #01 -->
+      <div class="shuffle-item col sm-col-6 lg-col-3 p1" data-groups='["all", "icons", "templates"]'>
+
+        <!-- OVERLAY -->
+        <div class="overlay">
+
+          <!-- OVERLAY CAPTION -->
+          <div class="overlay-caption p3 text-center">
+            <a href="#mfp-dialog-01" class="btn btn-contrast rounded mfp-popup-link">View Details</a>
+          </div>
+
+          <!-- IMAGE -->
+          <img src="img/demo/portfolio-item_01.jpg" alt="Item 01">
+
+        </div>
+      </div>
+
+      <!-- #02 -->
+      <div class="shuffle-item col sm-col-6 lg-col-3 p1" data-groups='["all", "templates", "illustrations"]'>
+        <div class="overlay">
+          <div class="overlay-caption p3 text-center">
+            <a href="#mfp-dialog-02" class="btn btn-contrast rounded mfp-popup-link">View Details</a>
+          </div>
+          <img src="img/demo/portfolio-item_02.jpg" alt="Item 02">
+        </div>
+      </div>
+
+      <!-- #03 -->
+      <div class="shuffle-item col sm-col-6 lg-col-3 p1" data-groups='["all", "mockups", "icons"]'>
+        <div class="overlay">
+          <div class="overlay-caption p3 text-center">
+            <a href="#mfp-dialog-01" class="btn btn-contrast rounded mfp-popup-link">View Details</a>
+          </div>
+          <img src="img/demo/portfolio-item_03.jpg" alt="Item 03">
+        </div>
+      </div>
+
+      <!-- #04 -->
+      <div class="shuffle-item col sm-col-6 lg-col-3 p1" data-groups='["all", "illustrations", "mockups"]'>
+        <div class="overlay">
+          <div class="overlay-caption p3 text-center">
+            <a href="#mfp-dialog-02" class="btn btn-contrast rounded mfp-popup-link">View Details</a>
+          </div>
+          <img src="img/demo/portfolio-item_04.jpg" alt="Item 04">
+        </div>
+      </div>
+
+      <!-- #05 -->
+      <div class="shuffle-item col sm-col-6 lg-col-3 p1" data-groups='["all", "logotypes", "templates"]'>
+        <div class="overlay">
+          <div class="overlay-caption p3 text-center">
+            <a href="#mfp-dialog-01" class="btn btn-contrast rounded mfp-popup-link">View Details</a>
+          </div>
+          <img src="img/demo/portfolio-item_05.jpg" alt="Item 05">
+        </div>
+      </div>
+
+      <!-- #06 -->
+      <div class="shuffle-item col sm-col-6 lg-col-3 p1" data-groups='["all", "templates", "logotypes"]'>
+        <div class="overlay">
+          <div class="overlay-caption p3 text-center">
+            <a href="#mfp-dialog-02" class="btn btn-contrast rounded mfp-popup-link">View Details</a>
+          </div>
+          <img src="img/demo/portfolio-item_06.jpg" alt="Item 06">
+        </div>
+      </div>
+
+      <!-- #07 -->
+      <div class="shuffle-item col sm-col-6 lg-col-3 p1" data-groups='["all", "templates", "logotypes"]'>
+        <div class="overlay">
+          <div class="overlay-caption p3 text-center">
+            <a href="#mfp-dialog-02" class="btn btn-contrast rounded mfp-popup-link">View Details</a>
+          </div>
+          <img src="img/demo/portfolio-item_07.jpg" alt="Item 07">
+        </div>
+      </div>
+
+      <!-- #08 -->
+      <div class="shuffle-item col sm-col-6 lg-col-3 p1" data-groups='["all", "templates", "logotypes"]'>
+        <div class="overlay">
+          <div class="overlay-caption p3 text-center">
+            <a href="#mfp-dialog-02" class="btn btn-contrast rounded mfp-popup-link">View Details</a>
+          </div>
+          <img src="img/demo/portfolio-item_08.jpg" alt="Item 08">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- 06 SECTION: REVIEWS -->
+  <div id="reviews" class="text-contrast py4" data-parallax="scroll" data-speed="0" data-image-src="img/blue-parallax_02.jpg">
+    <div class="container mx-auto px3">
+
+      <!-- SECTION'S HEADING -->
+      <div class="mb3 text-center" data-animate='{"cls": "animated fadeInDown", "target": "> *", "delay": "200"}'>
+        <h1 class="my0">What People Say About Me</h1>
+        <span class="divider col-1 mx-auto mt2"></span>
+      </div>
+
+
+      <!-- NARROW SUBCONTAINER -->
+      <div class="col-12 lg-col-10 mx-auto">
+
+        <!-- #02 CAROUSEL -->
+        <div class="owl-carousel-wrap" data-animate='{"cls": "animated fadeIn", "target": ".owl-item", "delay": "200"}'>
+
+          <!-- ITEMS -->
+          <div id="carousel-02" class="owl-carousel" data-animate='{"cls": "animated fadeInUp", "target": ".owl-dot", "delay": "100"}'>
+
+            <!-- #01 -->
+            <div class="px1 text-center">
+              <img class="avatar circle" src="img/demo/user_small-01.jpg" alt="Richelle Jayden">
+              <p><q class="italic">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat magni ipsum reprehenderit eaque nam! Animi ullam in aperiam perspiciatis id odio numquam, a accusamus tenetur ad unde reprehenderit iusto, distinctio!</q></p>
+              <a href="#" class="text-sm uppercase">Richelle Jayden</a>
+            </div>
+
+            <!-- #02 -->
+            <div class="px1 text-center">
+              <img class="avatar circle" src="img/demo/user_small-02.jpg" alt="Mikey Layton">
+              <p><q class="italic">Nostrum, maiores! Ullam fugiat facilis reiciendis quis incidunt quidem id placeat accusantium sequi, numquam, itaque pariatur, modi, molestiae fugit dignissimos. Quaerat inventore nobis labore iusto obcaecati dolores sapiente, magni quibusdam</q></p>
+              <a href="#" class="text-sm uppercase">Mikey Layton</a>
+            </div>
+
+            <!-- #03 -->
+            <div class="px1 text-center">
+              <img class="avatar circle" src="img/demo/user_small-03.jpg" alt="Jodi Ellen">
+              <p><q class="italic">Enim minima officiis perspiciatis modi dolore, placeat ad excepturi voluptatem doloribus recusandae eos impedit unde praesentium, sit numquam deleniti iste ipsam inventore aut tempora labore quo esse id</q></p>
+              <a href="#" class="text-sm uppercase">Jodi Ellen</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 06 SECTION: GET IN TOUCH -->
+  <div id="get-in-touch" class="py4">
+    <div class="container mx-auto px3">
+
+     <!-- SECTION'S HEADING -->
+      <div class="mb3 text-center" data-animate='{"cls": "animated fadeInDown", "target": "> *", "delay": "200"}'>
+        <h1 class="my0">Get In Touch</h1>
+        <h2 class="h5 text-muted mt1">Let's talk!</h2>
+        <span class="divider col-1 mx-auto mt2"></span>
+      </div>
+
+
+      <!-- NARROW SUBCONTAINER -->
+      <div class="col-12 lg-col-8 mx-auto">
+
+
+        <!-- SEND ME A MESSAGE -->
+        <h3 class="text-center" data-animate='{"cls": "animated fadeInDown"}'>Send me a message</h3>
+
+        <!-- CONTACT FORM -->
+        <form action="mailto:your@email.com" class="form mb4">
+          <div class="clearfix" data-animate='{"cls": "animated fadeIn"}'>
+
+            <!-- FULL NAME FIELD -->
+            <div class="col col-12 md-col-6 p1">
+              <input class="textbox" type="text" name="name" placeholder="Full Name" />
+            </div>
+
+            <!-- EMAIL FIELD -->
+            <div class="col col-12 md-col-6 p1">
+              <input class="textbox" type="text" name="email" placeholder="Email" />
+            </div>
+
+            <!-- MESSAGE FIELD -->
+            <div class="col col-12 p1">
+              <textarea class="textbox" rows="8" name="message" placeholder="Message"></textarea>
+            </div>
+
+            <!-- BUTTONS FIELD -->
+            <div class="col col-12">
+              <input class="btn rounded m1" type="submit" value="Send message">
+              <input class="btn rounded m1" type="reset" value="Reset">
+            </div>
+
+          </div>
+        </form>
+
+
+        <!-- SOCIAL NETWORKS -->
+        <h3 class="text-center" data-animate='{"cls": "animated fadeInDown"}'>Social networks</h3>
+
+        <!-- SOCIAL NETWORKS LINKS -->
+        <div class="text-lg text-center" data-animate='{"cls": "animated fadeInUp", "target": "> div", "delay": "200"}'>
+
+          <!-- FACEBOOK -->
+          <div class="inline-block p1"><a href="#" class="text-decoration-none"><i class="icon-social-facebook"></i></a></div>
+
+          <!-- TWITTER -->
+          <div class="inline-block p1"><a href="#" class="text-decoration-none"><i class="icon-social-twitter"></i></a></div>
+
+          <!-- LINKEDIN -->
+          <div class="inline-block p1"><a href="#" class="text-decoration-none"><i class="icon-social-linkedin"></i></a></div>
+
+          <!-- DRIBBBLE -->
+          <div class="inline-block p1"><a href="#" class="text-decoration-none"><i class="icon-social-dribbble-outline"></i></a></div>
+
+          <!-- GOOGLE PLUS -->
+          <div class="inline-block p1"><a href="#" class="text-decoration-none"><i class="icon-social-googleplus"></i></a></div>
+
+          <!-- INSTAGRAM -->
+          <div class="inline-block p1"><a href="#" class="text-decoration-none"><i class="icon-social-instagram-outline"></i></a></div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- 07 SECTION: GOOGLE MAP CONTAINER -->
+  <div id="google-map" style="height: 500px">
+
+    <!-- CONTAINER OVER THE MAP -->
+    <div class="container mx-auto py4 text-center absolute bottom z-index-first">
+
+      <h1 class="h2 mb3">Interested in working together?</h1>
+      <a href="#get-in-touch" class="btn rounded-large">Get in touch</a>
+
+    </div>
+  </div>
+
+
+  <!-- 08 SECTION: FOOTER -->
+  <div id="footer" class="text-contrast bg-primary py4">
+    <div class="container mx-auto px3 text-center">
+
+      <div class="lg-flex items-center justify-between text-sm uppercase">
+        <div>
+          <div class="inline-block p1"><a href="#hero">Home</a></div>
+          <div class="inline-block p1"><a href="#about">About me</a></div>
+          <div class="inline-block p1"><a href="#customers">Customers</a></div>
+          <div class="inline-block p1"><a href="#portfolio">Portfolio</a></div>
+          <div class="inline-block p1"><a href="#reviews">Reviews</a></div>
+          <div class="inline-block p1"><a href="#get-in-touch">Contact</a></div>
+        </div>
+
+        <p>© 2016 - Kate TEMPLATE. All rights reserved.</p>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

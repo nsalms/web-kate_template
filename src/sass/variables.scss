@@ -1,0 +1,65 @@
+// Global Variables //
+
+
+// FONT
+// ========================================================================
+
+$font-family    : 'Yantramanav', sans-serif;
+$font-size      : 16px;
+$font-weight    : normal;
+$line-height    : 1.6;
+
+$font-family-sec: $font-family;
+$font-size-sec  : .875rem;
+$font-weight-sec: 500;
+
+
+// COLOR
+// ========================================================================
+
+$color-default : #383e4d;
+$color-primary : darken(#7ec9ac, 10%);
+$color-contrast: white;
+
+
+// BACKGROUND
+// ========================================================================
+
+$bg-default  : #e1e9ef;
+$bg-primary  : #7ec9ac; // EB586F, 4AA0D5
+$bg-contrast : white;
+
+
+// TRANSITION
+// ========================================================================
+
+$transition    : 0.35s ease;
+$transition-sec: 0.2s ease;
+
+
+// BORDER
+// ========================================================================
+
+$border-radius: 3px;
+
+
+// SPACES
+// ========================================================================
+
+$space-1: .5rem;
+$space-2: 1rem;
+$space-3: 2rem;
+$space-4: 4rem;
+
+
+// BREAKPOINTS
+// ========================================================================
+
+$bp-sm    : 480px;
+$bp-md    : 768px;
+$bp-lg    : 960px;
+$bp-xl    : 1200px;
+
+$bp-sm-max: $bp-md - 1;
+$bp-md-max: $bp-lg - 1;
+$bp-lg-max: $bp-xl - 1;

@@ -1,0 +1,173 @@
+/* Core Module - Utility */
+
+
+// CONTAINER
+// ========================================================================
+
+.container {
+  right: 0;
+  left: 0;
+
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 60rem;
+}
+
+@media (min-width: $bp-xl) { .container { max-width: 75rem } }
+
+
+// TYPOGRAPHY
+// ========================================================================
+
+.font-family     { font-family: $font-family     }
+.font-family-sec { font-family: $font-family-sec }
+
+.font-family-inherit  { font-family    : inherit }
+.font-size-inherit    { font-size      : inherit }
+.text-decoration-none { text-decoration: none    }
+
+.bold      { font-weight   : bold      }
+.regular   { font-weight   : normal    }
+.italic    { font-style    : italic    }
+.uppercase { text-transform: uppercase }
+
+.text-left    { text-align: left    }
+.text-center  { text-align: center  }
+.text-right   { text-align: right   }
+.text-justify { text-align: justify }
+
+.text-xl { font-size: 2rem           }
+.text-lg { font-size: 1.5rem         }
+.text-sm { font-size: $font-size-sec }
+
+@media (max-width: $bp-md) {
+
+  .text-xl { font-size: 1.5rem }
+  .text-lg { font-size: 1rem   }
+
+}
+
+.truncate {
+  max-width    : 100%;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+}
+
+.list-reset {
+  list-style  : none;
+  padding-left: 0;
+}
+
+
+// MICRO CLEARFIX
+// ========================================================================
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table
+}
+
+.clearfix:after { clear: both }
+
+
+// SIZES
+// ========================================================================
+
+.height-viewport {
+  box-sizing: border-box;
+  height    : 100vh;
+  min-height: 50rem;
+}
+
+.height-natural { min-height: 1.6em }
+
+.cover {
+  top   : 0;
+  right : 0;
+  bottom: 0;
+  left  : 0;
+}
+
+
+// HIDDEN
+// ========================================================================
+
+.hidden {
+  visibility: hidden !important;
+  opacity: 0;
+}
+
+@media (max-width: $bp-sm-max) {
+
+  .md-visible { display: none !important }
+  .lg-visible { display: none !important }
+  .sm-hidden  { display: none !important }
+
+}
+
+@media (min-width: $bp-md) and (max-width: $bp-lg) {
+
+  .sm-visible { display: none !important }
+  .lg-visible { display: none !important }
+  .md-hidden  { display: none !important }
+
+}
+
+@media (min-width: $bp-lg) {
+
+  .sm-visible { display: none !important }
+  .md-visible { display: none !important }
+  .lg-hidden  { display: none !important }
+
+}
+
+
+// MISCELLANEOUS
+// ========================================================================
+
+.block        { display: block        }
+.inline-block { display: inline-block }
+.none         { display: none         }
+
+.relative { position: relative }
+.absolute { position: absolute }
+.fixed    { position: fixed    }
+
+.bottom { bottom: 0 }
+
+.left  { float: left  }
+.right { float: right }
+
+.rounded       { border-radius: $border-radius }
+.rounded-large { border-radius: 99rem;         }
+.circle        { border-radius: 50%            }
+
+.z-index-first  { z-index: 1    }
+.z-index-last   { z-index: 9999 }
+
+
+// VERTICAL ALIGN
+// ========================================================================
+
+.vertical-align {
+  font-size: 0.001px;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+}
+
+.vertical-align-middle,
+.vertical-align-bottom {
+    display: inline-block;
+    max-width: 100%;
+    font-size: 1rem;
+}
+
+.vertical-align-middle { vertical-align: middle }
+.vertical-align-bottom { vertical-align: bottom }

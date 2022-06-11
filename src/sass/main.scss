@@ -1,0 +1,41 @@
+/*!
+ * © 2016 - Kate Themplate. All rights reserved. Designed by Genett Desing.
+ * Version: 1.0.0
+ * Author: Genett Desing, http://themeforest.net/user/genett
+ * Email: genettdesign@gmail.com
+ */
+
+@import 'variables';
+
+
+// CORE MODULE //
+
+@import 'modules/core/typography';
+@import 'modules/core/grid';
+@import 'modules/core/margin';
+@import 'modules/core/padding';
+@import 'modules/core/flexbox';
+@import 'modules/core/utility';
+
+
+// OPTIONAL MODULES //
+
+@import 'modules/button';
+@import 'modules/form';
+@import 'modules/link';
+@import 'modules/text-colors';
+@import 'modules/background-colors';
+@import 'modules/progress';
+@import 'modules/overlay';
+
+
+// VENDOR MODULES //
+
+@import 'vendor/carousel';
+@import 'vendor/popup';
+@import 'vendor/icons';
+
+
+// MISCELLANEOUS //
+
+@import 'misc';

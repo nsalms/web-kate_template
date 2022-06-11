@@ -1,0 +1,177 @@
+/* Magnific Popup | MIT License | http://dimsemenov.com/plugins/magnific-popup/ */
+
+
+// MODAL BACKGROUND
+// ========================================================================
+
+.mfp-bg {
+  position: fixed;
+  z-index: 1042;
+  top: 0;
+  left: 0;
+
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 0.9;
+  background: rgba($color-default, .75);
+}
+
+
+// POPUP WRAP
+// ========================================================================
+
+.mfp-wrap {
+  position: fixed;
+  z-index: 1043;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  outline: none !important;
+
+  -webkit-backface-visibility: hidden;
+}
+
+
+// POPUP CONTAINER
+// ========================================================================
+
+.mfp-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 0 8px;
+
+  text-align: center;
+
+
+  &:before {
+    display: inline-block;
+
+    height: 100%;
+
+    content: '';
+    vertical-align: middle;
+  }
+}
+
+
+// POPUP CONTENT
+// ========================================================================
+
+.mfp-content {
+  position: relative;
+  z-index: 1045;
+
+  display: inline-block;
+
+  margin: 0 auto;
+
+  text-align: left;
+  vertical-align: middle;
+}
+
+.mfp-inline-holder .mfp-content {
+  width: 100%;
+  cursor: auto;
+}
+
+.mfp-align-top .mfp-container:before { display: none }
+
+.mfp-auto-cursor .mfp-content { cursor: auto }
+
+.mfp-s-error .mfp-content { display: none }
+
+
+// POPUP DIALOG
+// ========================================================================
+
+.mfp-dialog {
+  position: relative;
+
+  width: auto;
+  max-width: 48rem;
+  margin: 30px auto;
+
+  background: $bg-contrast;
+}
+
+
+// CLOSE BUTTON
+// ========================================================================
+
+.mfp-close {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+
+  width: 1.75rem;
+  height: 1.75rem;
+  padding: 1rem;
+
+  cursor: pointer;
+  box-sizing: content-box;
+}
+
+
+// ZOOMIN ANIMATION
+// ========================================================================
+
+.mfp-zoomIn {
+
+  /* Animate Popup Dialog */
+  .mfp-dialog {
+    transition: all 0.2s ease-in-out; 
+    transform: scale(0.8);
+    opacity: 0;  
+  }
+
+  /* Animate In */
+  &.mfp-ready .mfp-dialog {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  /* Animate Out */
+  &.mfp-removing .mfp-dialog {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+
+  /* Animate Modal Background */
+  &.mfp-bg {
+    transition: opacity 0.3s ease-out;
+    opacity: 0;
+  }
+
+  /* Animate In */
+  &.mfp-ready.mfp-bg { opacity: 0.9 }
+
+  /* Animate Out */
+  &.mfp-removing.mfp-bg { opacity: 0 }
+}
+
+
+// MISCELLANEOUS
+// ========================================================================
+
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
+  width: 100%;
+  cursor: auto;
+}
+
+.mfp-s-ready .mfp-preloader { display: none }
+
+.mfp-hide { display: none !important }
+

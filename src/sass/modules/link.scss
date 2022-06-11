@@ -1,0 +1,51 @@
+/* Module - Link */
+
+
+// CUSTOM LINKS
+// ========================================================================
+
+a {
+  position       : relative;
+  
+  text-decoration: none;
+  
+  opacity        : 0.9;
+  color          : inherit;
+
+
+  /* BORDER BOTTOM */
+
+  &:not(.btn):not(.text-decoration-none):after {
+    position     : absolute;
+    right        : 0;
+    bottom       : 0px;
+    left         : 0;
+    
+    display      : block;
+    
+    height       : 2px;
+    margin-bottom: -1px;
+    
+    content      : '';
+    transition   : $transition-sec;
+    
+    opacity      : 0.4;
+    background   : currentcolor;
+  }
+
+
+  /* HOVER AND ACTIVE STATE */
+
+  &:hover, &:focus, &.is-active {
+    opacity: 1;
+    outline: none;
+    
+
+    &:not(.btn):not(.text-decoration-none):after {
+      margin-bottom: 0;
+      opacity      : 0.6;
+    }
+  }
+}
+
+a.text-decoration-none { opacity: 1 }
