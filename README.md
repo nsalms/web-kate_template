@@ -29,9 +29,6 @@ Before start to customize let's get acquainted with files structure.
 - `src/js` - Contains souce **javascript** files
 - `src/sass` - Contains souce **sass** files
 
-## Color Schemes
-The template provides 3 default color schemes. Copy content of folder `color_schemes/blue`, `color_schemes/green` or `color_schemes/red` into `main` folder to set one of them. See [here](#sass-customization) if you want your own color scheme
-
 ## HTML customization
 ### Overview
 Main `html` files are contained in the main directory.
@@ -153,19 +150,6 @@ After your customization you need to compile your SASS files. To do that run thi
 
 Javascript files are contained in `src/js` directory. There are `vendor` folder which contains jQuery and JS plugins; and `custom.init.js` file which initialize those plugins. And again after any customization you need to compile JS files running this command: `gulp javascript`
 
-## Conclusion
-
-I tryed to describe all of things you need to know, but if you have any questions after reading don't be shy to ask me.
-
-My email address: genettdesign@gmail.com
-
-# Changelog
-
-```
-v1.0.0:
-
-- Initial commit.
-```
 
 # Credits
 Thanks to the authors for their free JS plugins:
