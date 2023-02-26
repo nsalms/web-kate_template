@@ -1,9 +1,7 @@
 @charset "UTF-8";
 /*!
- * © 2016 - Kate Themplate. All rights reserved. Designed by Genett Desing.
+ * © Kate Template. All rights reserved.
  * Version: 1.0.0
- * Author: Genett Desing, http://themeforest.net/user/genett
- * Email: genettdesign@gmail.com
  */
 /* Core Module - Typography */
 body {
@@ -1759,15 +1757,15 @@ audio, canvas, iframe, img, svg, video {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
-  border: 2px solid #7ec9ac;
-  background-color: #7ec9ac;
+  border: 2px solid #4AA0D5;
+  background-color: #4AA0D5;
   -webkit-appearance: none;
   /* HOVER & ACTIVE STATE */
   /* DISABLED STATE */
   /* FOCUS STATE */
 }
 .btn:hover, .btn.is-active {
-  color: #7ec9ac;
+  color: #4AA0D5;
   background-color: transparent;
 }
 .btn:disabled, .btn.is-disabled {
@@ -1805,7 +1803,7 @@ audio, canvas, iframe, img, svg, video {
   /* HOVER & ACTIVE STATE */
 }
 .btn.btn-contrast:hover, .btn.btn-contrast.is-active {
-  color: #7ec9ac;
+  color: #4AA0D5;
   background-color: white;
 }
 
@@ -1876,7 +1874,7 @@ a.text-decoration-none {
 }
 
 .text-primary {
-  color: #5aba95;
+  color: #2c87c0;
 }
 
 .text-contrast {
@@ -1893,7 +1891,7 @@ a.text-decoration-none {
 }
 
 .bg-primary {
-  background-color: #7ec9ac;
+  background-color: #4AA0D5;
 }
 
 .bg-contrast {
@@ -1916,7 +1914,7 @@ a.text-decoration-none {
   height: 1.75rem;
   transition: width 1.5s;
   text-align: right;
-  background: #7ec9ac;
+  background: #4AA0D5;
 }
 .progress .progress-bar > * {
   padding: 0 0.5rem;
@@ -1953,7 +1951,7 @@ a.text-decoration-none {
   content: "";
   transition: 0.35s ease;
   opacity: 0;
-  background: rgba(126, 201, 172, 0.75);
+  background: rgba(74, 160, 213, 0.75);
 }
 .overlay:hover:before {
   opacity: 1;
@@ -2032,7 +2030,6 @@ a.text-decoration-none {
 }
 .owl-carousel.owl-grab {
   cursor: move;
-  cursor: -webkit-grab;
   cursor: grab;
 }
 .owl-carousel.owl-rtl {
@@ -5163,7 +5160,7 @@ a.text-decoration-none {
 
 .divider {
   height: 3px;
-  background: rgba(126, 201, 172, 0.8);
+  background: rgba(74, 160, 213, 0.8);
   display: inline-block;
   border-radius: 3px;
 }
@@ -5178,24 +5175,11 @@ a.text-decoration-none {
 
 .typed-cursor {
   opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-          animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
 
 .no-csstransitions .typed-cursor {
   display: none;
-}
-
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes blink {
@@ -5220,38 +5204,23 @@ a.text-decoration-none {
   display: inline-block;
   width: 6px;
   height: 100%;
-  -webkit-animation: loader 1.2s infinite ease-in-out;
-          animation: loader 1.2s infinite ease-in-out;
+  animation: loader 1.2s infinite ease-in-out;
   background-color: rgba(255, 255, 255, 0.65);
 }
 .loader .rect1 {
-  -webkit-animation-delay: -1.2s;
-          animation-delay: -1.2s;
+  animation-delay: -1.2s;
 }
 .loader .rect2 {
-  -webkit-animation-delay: -1.1s;
-          animation-delay: -1.1s;
+  animation-delay: -1.1s;
 }
 .loader .rect3 {
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
+  animation-delay: -1s;
 }
 .loader .rect4 {
-  -webkit-animation-delay: -0.9s;
-          animation-delay: -0.9s;
+  animation-delay: -0.9s;
 }
 .loader .rect5 {
-  -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
-}
-
-@-webkit-keyframes loader {
-  0%, 40%, 100% {
-    transform: scaleY(0.4);
-  }
-  20% {
-    transform: scaleY(1);
-  }
+  animation-delay: -0.8s;
 }
 
 @keyframes loader {

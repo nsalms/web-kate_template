@@ -18,5 +18,8 @@
   "scripts": {
     "build": "gulp default"
   },
-  "homepage": "http://themeforest.net/user/genett"
+  "homepage": "http://themeforest.net/user/genett",
+  "dependencies": {
+    "push-dir": "^0.4.1"
+  }
 }
