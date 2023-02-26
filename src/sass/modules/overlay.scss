@@ -1,0 +1,54 @@
+/* Module - Overlay */
+
+
+// BASE OVERLAY
+// ========================================================================
+
+.overlay {
+  position: relative;
+  
+  display : block;
+  overflow: hidden;
+
+
+  /* OVERLAY CAPTION */
+
+  .overlay-caption {
+    position  : absolute;
+    bottom    : 0;
+    
+    box-sizing: border-box;
+    width     : 100%;
+    
+    transition: $transition;
+    transform : scale(0.5) translateY(5rem);
+    
+    opacity   : 0;
+    background: transparent;
+  }
+
+  &:hover .overlay-caption {
+    transform: scale(1) translateY(0);
+    opacity  : 1;
+  }
+
+
+  /* OVERLAY BACKGROUND */
+
+  &:before {
+    position  : absolute;
+    right     : 0;
+    left      : 0;
+    
+    width     : 100%;
+    height    : 100%;
+    
+    content   : '';
+    transition: $transition;
+    
+    opacity   : 0;
+    background: rgba($bg-primary, .75);
+  }
+  
+  &:hover:before { opacity: 1 }
+}

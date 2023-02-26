@@ -1,0 +1,139 @@
+/* Owl Carousel 2 | MIT License | http://owlcarousel.owlgraphic.com/ */
+
+
+.owl-carousel {
+  position: relative;
+  z-index: 1;
+
+  display: none;
+
+  width: 100%;
+      box-sizing: border-box;
+
+  -webkit-tap-highlight-color: transparent;
+  .owl-stage {
+    position: relative;
+
+    -ms-touch-action: pan-Y;
+  }
+  .owl-stage:after {
+    line-height: 0;
+
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: ".";
+  }
+  .owl-stage-outer {
+    position: relative;
+
+    overflow: hidden;
+
+    -webkit-transform: translate3d(0, 0, 0);
+  }
+  .owl-height { transition: height $transition; }
+  .owl-item {
+    position: relative;
+
+    float: left;
+
+    min-height: 1px;
+
+    -webkit-transform: translate3d(0, 0, 0);
+
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+  }
+  .owl-nav.disabled,
+  .owl-dots.disabled {
+    display: none;
+  }
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next,
+  .owl-dot {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+  }
+  &.owl-loaded {
+    display: block;
+  }
+  &.owl-loading {
+    display: block;
+
+    opacity: 0;
+  }
+  &.owl-hidden {
+    opacity: 0;
+  }
+  &.owl-refresh .owl-item {
+    display: none;
+  }
+  &.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  &.owl-grab {
+    cursor: move;
+    cursor: grab;
+  }
+  &.owl-rtl {
+    direction: rtl;
+  }
+  &.owl-rtl .owl-item {
+    float: right;
+  }
+}
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block;
+}
+
+
+.owl-theme {
+
+  // Styling dots
+  .owl-nav.disabled + .owl-dots {
+    margin-top: 10px;
+  }
+  .owl-dots {
+    text-align: center;
+    margin-top: 1rem;
+
+    .owl-dot {
+      display: inline-block;
+      zoom: 1;
+
+      span {
+        color: inherit;
+        width: 8px;
+        height: 8px;
+        margin: 0 5px;
+        border: 2px solid currentcolor;
+        display: block;
+        transition: $transition;
+        border-radius: 30px;
+        opacity: 0.8;
+      }
+
+      &.active,
+      &:hover {
+        span {
+          background: currentcolor;
+          opacity: 0.9;
+        }
+      }
+    }
+  }
+}

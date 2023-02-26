@@ -1,0 +1,36 @@
+/* Module - Progress */
+
+
+// PROGRESS CONTAINER
+// ========================================================================
+
+.progress {
+  font-size : $font-size-sec;
+  
+  overflow  : hidden;
+  
+  width     : 100%;
+  
+  color     : $color-contrast;
+  background: $bg-default;
+
+
+  /* PROGRESS BAR */
+  
+  .progress-bar {
+    line-height: 1.75rem;
+    
+    overflow   : hidden;
+    
+    width      : 10%;
+    height     : 1.75rem;
+    
+    transition : width 1.5s;
+    text-align : right;
+    
+    background : $bg-primary;
+
+
+    > * { padding: 0 .5rem; }
+  }
+}

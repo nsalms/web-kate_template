@@ -1,0 +1,106 @@
+/* Module - Button */
+
+
+// BASE BUTTON
+// ========================================================================
+
+.btn {
+  font-family        : $font-family-sec;
+  font-size          : $font-size-sec;
+  font-weight        : $font-weight-sec;
+  line-height        : 1.125em;
+  
+  display            : inline-block;
+  
+  padding            : .5rem 2rem;
+  
+  cursor             : pointer;
+  transition         : $transition;
+  transition-property: color, background;
+  text-align         : center;
+  vertical-align     : middle;
+  text-decoration    : none;
+  text-transform     : uppercase;
+  
+  color              : $color-contrast;
+  border             : 2px solid $bg-primary;
+  background-color   : $bg-primary;
+  
+  -webkit-appearance : none;
+
+
+  /* HOVER & ACTIVE STATE */
+
+  &:hover, &.is-active {
+    color           : $bg-primary;
+    background-color: transparent;
+  }
+
+
+  /* DISABLED STATE */
+
+  &:disabled, &.is-disabled { opacity: .5 }
+
+
+  /* FOCUS STATE */
+
+  &:focus { outline: none }
+
+}
+
+
+// BUTTON SIZES
+// ========================================================================
+
+.btn {
+
+  /* SMALL BUTTON */
+
+  &.btn-small {
+    font-size     : 0.8rem;
+    padding       : .5rem 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+
+  /* LARGE BUTTON */
+
+  &.btn-large { font-size: 1rem }
+
+
+  /* NARROW BUTTON */
+
+  &.btn-narrow {
+    padding-right: .5rem;
+    padding-left : .5rem;
+  }
+}
+
+
+// BUTTON COLORS
+// ========================================================================
+
+.btn {
+
+  /* CONTRAST BUTTON */
+
+  &.btn-contrast {
+    color           : $color-contrast;
+    border-color    : $bg-contrast;
+    background-color: transparent;
+
+
+    /* HOVER & ACTIVE STATE */
+
+    &:hover, &.is-active {
+      color: $bg-primary;
+      background-color: $bg-contrast;
+    }
+  }
+}
+
+
+::-moz-focus-inner {
+  border : 0;
+  padding: 0;
+}

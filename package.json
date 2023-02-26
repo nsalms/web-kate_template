@@ -1,0 +1,25 @@
+{
+  "name": "kate_template",
+  "version": "1.0.0",
+  "description": "Kate is a exceptional and unique HTML One Page CV Responsive Template. It's perfect for any personal vCard or small agency. One Page design allows your clients don't get lost on your website. It was design with latest technology such as HTML5, CSS3 and SASS (SCSS).",
+  "author": "Genett Design",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-order": "^1.2.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-webserver": "^0.9.1",
+    "sass": "^1.52.3"
+  },
+  "scripts": {
+    "build": "gulp default"
+  },
+  "homepage": "http://themeforest.net/user/genett",
+  "dependencies": {
+    "push-dir": "^0.4.1"
+  }
+}

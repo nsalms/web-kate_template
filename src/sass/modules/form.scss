@@ -1,0 +1,33 @@
+/* Module - Form */
+
+
+// BASE FORM
+// ========================================================================
+
+.form { .textbox { width: 100% } }
+
+
+// TEXTBOX
+// ========================================================================
+
+.textbox {
+  box-sizing        : border-box;
+  max-width         : 100%;
+  padding           : .5rem 1rem;
+  
+  transition        : border $transition-sec;
+  
+  border            : 1px solid $bg-default;
+  background        : $bg-contrast;
+  background        : rgba($bg-default, 0.15);
+  
+  -webkit-appearance: none;
+
+
+  /* FOCUS STATE */
+
+  &:focus {
+    border-color: darken($bg-default, 25%);
+    outline     : none;
+  }
+}
