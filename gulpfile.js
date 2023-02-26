@@ -8,7 +8,7 @@ var nano         = require('gulp-cssnano');
 var autoprefixer = require('gulp-autoprefixer');
 
 
-// gulp.task('default', gulp.series('css', 'sass', 'javascript'));
+//gulp.task('default', gulp.series('css', 'sass', 'javascript'));
 
 function gulpCSS() {
   return gulp
@@ -47,3 +47,5 @@ function gulpJS() {
   .pipe(gulp.dest('js'))
 }
 gulp.task(gulpJS);
+
+exports.default = gulp.series(gulpCSS, gulpSASS, gulpJS);

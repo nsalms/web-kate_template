@@ -15,5 +15,8 @@
     "gulp-webserver": "^0.9.1",
     "sass": "^1.52.3"
   },
+  "scripts": {
+    "build": "gulp default"
+  },
   "homepage": "http://themeforest.net/user/genett"
 }
